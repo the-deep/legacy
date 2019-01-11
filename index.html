@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <title>Deep beta</title>
-<style>
-    body,
-    html {
-        padding: 0;
-        margin: 0;
-    }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' href='./static/img/favicon.png' type='image/x-icon' >
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Deep legacy</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
 
-    body {
-        height: 100vh;
-        width: 100vw;
-        font-family: 'Source Sans Pro', sans-serif;
-        background-color: #212121;
-        background-image: url('deep-bg.png');
-        background-size: cover;
-        background-position: center center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: auto;
-        color: #fff;
-        font-size: 19px;
-        padding: 12px;
-        text-align: center;
-    }
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #212121;
+            background-image: url('./static/img/homepage.png');
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            color: #fff;
+            font-size: 19px;
+            padding: 12px;
+            text-align: center;
+        }
 
-    p {
-        max-width: 720px;
-        margin: 0;
-        text-align: center;
-        line-height: 1.8;
-    }
+        body .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
 
-    a {
-        color: #006060;
-        text-decoration: none;
-    }
+        p {
+            max-width: 720px;
+            margin: 0;
+            text-align: center;
+            line-height: 1.8;
+        }
 
-    a:hover {
-        text-decoration: underline;
-    }
+        a {
+            color: #006060;
+            text-decoration: none;
+        }
 
-    * {
-        box-sizing: border-box;
-    }
-</style>
-    </head>
+        a:hover {
+            text-decoration: underline;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body .links {
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+            margin-top: 12px;
+        }
+        body .links .join-link {
+            height: 40px;
+            margin: 0 12px;
+        }
+
+        body .links .join-link {
+            padding: 4px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
-    <p>Welcome to the previous home of the first version of DEEP. Unfortunately, this version of the platform is no longer supported and you should instead use the new version of DEEP found here at <a href="https://thedeep.io">thedeep.io</a>. All data from the platform including usernames, projects, leads and entries has been transferred to the new platform. If you have any questions, please feel free to contact us on one of your social channels or by email at <a href="mailto:admin@thedeep.io">admin@thedeep.io</a></p>
-
+    <div class="content">
+        <p>
+            Welcome to the previous home of the first version of DEEP. Unfortunately, this version of the platform is no longer supported and you should instead use the new version of DEEP found here at <a href="https://www.thedeep.io">thedeep.io</a>. All data from the platform including usernames, projects, leads and entries has been transferred to the new platform. If you have any questions, please feel free to contact us on one of our social channels or by email at <a href="mailto:admin@thedeep.io">admin@thedeep.io</a>
+        </p>
+        <div class="links">
+            <a href="https://goo.gl/13pcuA">
+                <img class="join-link slack-link" src="static/img/slack.png"></img>
+            </a>
+            <a href="https://join.skype.com/idYxL8ozLDOD">
+                <img class="join-link" src="static/img/skype.png"></img>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
